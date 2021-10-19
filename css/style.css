@@ -1,6 +1,7 @@
 body{
     margin: 0;
 }
+
 .container{
     width: 300px;
     height: 250px;
@@ -25,15 +26,14 @@ body{
 
 .carousel__images{
     display: flex;
-    transform: translateX(0);
-    transition: 0.25s;
+    transform: translateX(0); /* inital transformX is 0 as it changes from js it shifts the image on the basis of transform property*/
+    transition: 0.25s; /*to have smooth transition when image slides*/
 }
 
 .carousel__images img{
     width: 300px;
     height: 195px;
-    
-   object-fit: cover; 
+    object-fit: cover; 
 }
 
 .container__header{
